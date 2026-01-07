@@ -8,6 +8,7 @@
     <meta name="author" content="Generation Brasil">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg" />
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Contato</title>
 </head>
 
@@ -15,8 +16,6 @@
 
     <!-- Cabeçalho da Página (header) -->
     <header>
-
-        <!-- Título do cabeçalho -->
 
         <img src="https://brazil.generation.org/wp-content/uploads/2025/07/Generation_BRASIL_logo_NEW-BLUE.png"
             alt="Logo da Generation Brasil" style="width:65px;">
@@ -33,53 +32,47 @@
 
     </header>
 
+
     <!-- Seção Principal da Página (main) -->
-    <main>
+    <main class="main_contato">
+        <form action="#" method="post" id="formulario">
+
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu Nome" required>
+            <span id="error-name" class="error-message"></span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu Email" required>
+            <span id="error-email" class="error-message"></span>
+
+            <label for="subject">Assunto:</label>
+            <input type="text" id="subject" name="subject" placeholder="Digite o Assunto" required>
+            <span id="error-subject" class="error-message"></span>
 
 
-        <!-- Seção Principal da Página (main) -->
-        <main>
-            <form action="#" method="post" id="formulario">
-
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" placeholder="Digite seu Nome" required>
-                <span id="error-name" class="error-message"></span>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Digite seu Email" required>
-                <span id="error-email" class="error-message"></span>
-
-                <label for="subject">Assunto:</label>
-                <input type="text" id="subject" name="subject" placeholder="Digite o Assunto" required>
-                <span id="error-subject" class="error-message"></span>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" placeholder="Digite sua Mensagem" required></textarea>
+            <span id="error-message" class="error-message"></span>
 
 
-                <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" placeholder="Digite sua Mensagem" required></textarea>
-                <span id="error-message" class="error-message"></span>
+            <button type="submit">Enviar</button>
+        </form>
 
+        <!-- Seção do Google Maps -->
+        <article>
+            <h2>Localização</h2>
+            <address>
+                <p>Rua Endres</p>
+                <p>Guarulhos SP</p>
+            </address>
 
-                <button type="submit">Enviar</button>
-            </form>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.3242830482523!2d-46.55436607467214!3d-23.484826428852458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5f8108aa4fe5%3A0x8d374f020da12cfa!2sR.%20Endres%2C%20973%20-%20Vila%20das%20Bandeiras%2C%20Guarulhos%20-%20SP%2C%2007043-000!5e0!3m2!1spt-BR!2sbr!4v1767630646342!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" aria-hidden="false" tabindex="0" id="mapa">
+            </iframe>
 
-            <!-- Seção do Google Maps -->
-            <article>
-                <h2>Localização</h2>
-                <address>
-                    <p>Rua Endres</p>
-                    <p>Guarulhos SP</p>
-                </address>
-
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.3242830482523!2d-46.55436607467214!3d-23.484826428852458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5f8108aa4fe5%3A0x8d374f020da12cfa!2sR.%20Endres%2C%20973%20-%20Vila%20das%20Bandeiras%2C%20Guarulhos%20-%20SP%2C%2007043-000!5e0!3m2!1spt-BR!2sbr!4v1767630646342!5m2!1spt-BR!2sbr"
-                    width="600" height="450" style="border:0;" allowfullscreen loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" aria-hidden="false" tabindex="0" id="mapa">
-                </iframe>
-
-            </article>
-
-        </main>
-
+        </article>
 
     </main>
 
